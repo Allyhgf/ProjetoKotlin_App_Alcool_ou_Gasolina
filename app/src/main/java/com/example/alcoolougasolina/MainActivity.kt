@@ -54,10 +54,10 @@ class MainActivity : AppCompatActivity() {
         textInputAlcool.error = null
         textInputGasolina.error = null
 
-        if(pAlcool.isNotEmpty()){
+        if(!pAlcool.isNotEmpty()){
             textInputAlcool.error = "Digite o preço do álcool"
             return false
-        } else if (pGasolina.isNotEmpty()){
+        } else if (!pGasolina.isNotEmpty()){
             textInputGasolina.error = "Digite o preço da gasolina"
             return false
         }
